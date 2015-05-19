@@ -1,0 +1,21 @@
+<ion-view view-title="Furniture">
+  <ion-content>
+    <div class="list card">
+      <div class="item item-divider">Text Search</div>
+      <div class="item item-body">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" placeholder="Search Furniture">
+        </label>
+      </div>
+    </div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="furnItem in furnColl" type="item-text-wrap" href="#/tab-furniture/{{furnItem.id}}">
+        <img ng-src="img/{{furnItem.image1}}">
+        <h2>{{furnItem.name}}</h2>
+        <p>{{furnItem.description}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
