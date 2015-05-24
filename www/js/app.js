@@ -67,11 +67,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     .state('tab.furniture', {
-      url: '/furniture/:furnitureId',
+      url: '/dash/:furnitureId',
       views: {
         'tab-furniture': {
           templateUrl: 'templates/tab-furniture.html',
-          controller: 'FurnitureCtrl'
+          controller: 'DashDetailCtrl'
         }
       }
     })

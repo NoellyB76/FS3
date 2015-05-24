@@ -8,15 +8,15 @@ angular.module('starter.controllers', [])
     Chats.remove(chat);
   }
 })
-  .controller('DashCtrl', function($scope, FurnitureCollection) {
-    $scope.furnColl = FurnitureCollection.all();
-    $scope.remove = function(item) {
-      FurnitureCollection.remove(item);
-    }
+.controller('DashCtrl', function($scope, FurnitureCollection) {
+  $scope.furnColl = FurnitureCollection.all();
+  $scope.remove = function(item) {
+    FurnitureCollection.remove(item);
+  }
   })
-  .controller('FurnitureCtrl', function($scope, $stateParams,FurnitureCollection) {
-      $scope.furnItem = FurnitureCollection.get($stateParams.furnitureId);
-    })
+.controller('DashDetailCtrl', function($scope, $stateParams,FurnitureCollection) {
+    $scope.furnItem = FurnitureCollection.get($stateParams.furnitureId);
+  })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);

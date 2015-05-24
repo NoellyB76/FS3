@@ -10,12 +10,13 @@
       </div>
     </div>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="furnItem in furnColl" type="item-text-wrap" href="#/tab-furniture/{{furnItem.id}}">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="furnItem in furnColl" type="item-text-wrap" href="#/tab/dash/{{furnItem.id}}">
         <img ng-src="img/{{furnItem.image1}}">
         <h2>{{furnItem.name}}</h2>
         <p>{{furnItem.description}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>
       </ion-item>
     </ion-list>
+
   </ion-content>
 </ion-view>
